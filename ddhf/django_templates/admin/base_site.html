@@ -1,0 +1,17 @@
+{% extends "admin/base.html" %}
+{% load i18n %}
+{% block title %}{{ title }} | {% trans 'DDHF genstands registration' %}{% endblock %}
+
+{% block branding %}
+<table>
+  <td>
+   <img src="{{ MEDIA_URL }}setups/dansk_datahistorie_logo.gif" />
+  </td>
+<td>
+{# <h1 id="site-name"><center>{% trans 'Dansk Data Historisk Forenings genstandsregistrering' %}</center></h1> #}
+<h1 id="site-name"><center>DDHF<br />genstands- registrering</center></h1>
+</td>
+</table>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
