@@ -1,0 +1,12 @@
+BEGIN;
+DROP TABLE `producers_itemlist`;
+DROP TABLE `items_itempicture`;
+DROP TABLE `items_itemsubject`;
+ALTER TABLE `items` DROP FOREIGN KEY producerid_id_refs_producerid_42b09272;
+DROP TABLE `producers`;
+DROP TABLE `items`;
+DROP TABLE `subjects`;
+DROP TABLE `pictures`;
+DROP TABLE `files`;
+DROP TABLE `donators`;
+COMMIT;
