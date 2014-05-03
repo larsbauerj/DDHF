@@ -1,1 +1,1 @@
-Her gemmes de billeder i det mindste format.
+Her gemmes billeder i medium format.
