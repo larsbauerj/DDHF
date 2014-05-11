@@ -13,8 +13,10 @@ uname = os.uname()[1] # hostname
 prodserver = "www.datamuseum.dk"
 if uname == prodserver:
   DEBUG = False
+  MEDIA_STUB = '/home/bauer/dj1.6/DDHF/'
 else:
   DEBUG = True
+  MEDIA_STUB = '/home/bauer/dj1.6/DDHF/'
 TEMPLATE_DEBUG = DEBUG
 
 # PROJECT_ROOT = '/home/bauer/dj4/DDHF/'
@@ -62,13 +64,13 @@ USE_I18N = True
 # Absolute path to the directory that holds media.
 # Example: "/home/media/media.lawrence.com/"
 if uname == prodserver:
-  MEDIA_ROOT  = PROJECT_ROOT + 'pictures/'
+  MEDIA_ROOT  = MEDIA_STUB + 'pictures/'
   MEDIA_URL   = 'http://www.datamuseum.dk/static/'
 elif uname  == "ubuntuserver":
-  MEDIA_ROOT  = PROJECT_ROOT + 'pictures/'
+  MEDIA_ROOT  = MEDIA_STUB + 'pictures/'
   MEDIA_URL   = 'http://90.184.105.201:8000/static/'
 else:
-  MEDIA_ROOT  = PROJECT_ROOT + 'pictures/'
+  MEDIA_ROOT  = MEDIA_STUB + 'pictures/'
   MEDIA_URL   = 'http://90.184.105.201:8080/static/'
   MEDIA_URL   = 'http://90.184.105.201:8000/static/'
 
